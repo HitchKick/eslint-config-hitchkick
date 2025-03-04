@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    //...
+    "target": "ESNext",
+    "module": "ESNext",
+    /* Linting */
+    "strict": true,
+    "strictNullChecks": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./",
+    "outDir": "./dist",
+    "maxNodeModuleJsDepth": 10,
+    "sourceMap": false,
+    "declaration": true,
+    "useDefineForClassFields": true,
+    "incremental": true
+  }
+}

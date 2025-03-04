@@ -1,0 +1,63 @@
+{
+  "name": "eslint-config-hitchkick",
+  "version": "1.0.1",
+  "description": "Eslint config for Hitchkick projects",
+  "main": "dist/eslint.config.js",
+  "scripts": {
+    "lint:file": "eslint --report-unused-disable-directives --fix --max-warnings=0 --cache",
+    "lint": "TIMING=1 pnpm lint:file .",
+    "format:file": "prettier --write",
+    "format": "pnpm format:file .",
+    "tsc": "tsc -b",
+    "precommit": "pnpm format && pnpm tsc && pnpm lint",
+    "build": "rm dist/* && tsc -b"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "hitchkick",
+    "typescript",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HitchKick/eslint-config-hitchkick.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HitchKick/eslint-config-hitchkick/issues"
+  },
+  "homepage": "https://github.com/HitchKick/eslint-config-hitchkick#readme",
+  "author": "JackMBurch",
+  "license": "ISC",
+  "peerDependencies": {
+    "@eslint/compat": "^1.2.7",
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "9.21.0",
+    "@kesills/eslint-config-airbnb-typescript": "^20.0.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-config-turbo": "^2.4.4",
+    "eslint-plugin-check-file": "^3.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "eslint": "^9.21.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "jiti": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9"
+  },
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
+}

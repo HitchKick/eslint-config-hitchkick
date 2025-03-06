@@ -22,6 +22,12 @@ const baseBestPracticesRules = bestPracticesJs.rules!;
 
 export const airbnbTypescript: eslint.Linter.Config[] = [
   nodeJs,
+  es6Js,
+  importsJs,
+  variablesJs,
+  bestPracticesJs,
+  stylesJs,
+  errorsJs,
   jsxA11yJs,
   reactJs,
   reactHooksJs,

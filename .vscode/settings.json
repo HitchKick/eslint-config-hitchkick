@@ -7,7 +7,7 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": "never",
     "source.sortMembers": "never",
-    "source.fixAll.eslint": "always"
+    "source.fixAll.eslint": "never"
   },
   "[typescript]": {
     "editor.formatOnSave": false

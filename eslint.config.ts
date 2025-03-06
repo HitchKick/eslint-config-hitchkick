@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 
-import { FlatCompat } from '@eslint/eslintrc';
 import stylistic from '@stylistic/eslint-plugin';
 import typescriptEslint from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
@@ -8,17 +7,16 @@ import eslint from 'eslint';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import turboConfig from 'eslint-config-turbo/flat';
 import checkFile from 'eslint-plugin-check-file';
+import importPlugin from 'eslint-plugin-import';
 import react from 'eslint-plugin-react';
 import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { airbnbTypescript } from './rules';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-  resolvePluginsRelativeTo: __dirname, // optional
-});
 const viteGlob = '**/vite{,st}.{config,workspace}*{,.d}.ts';
 const checkFileIgnored = [viteGlob];
 
@@ -54,11 +52,12 @@ export default [
       '**/*.sw?',
     ],
   },
-  ...compat.extends('airbnb', '@kesills/airbnb-typescript'),
   stylistic.configs.recommended,
+  ...airbnbTypescript,
   ...turboConfig,
   {
     plugins: {
+      import: importPlugin,
       '@typescript-eslint': typescriptEslint,
       '@stylistic': stylistic,
       '@unused-imports': unusedImports,

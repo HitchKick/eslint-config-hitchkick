@@ -45,9 +45,9 @@
         "yml"
       ],
       "runIn": "backend",
-      "command": "(pnpm format:file ${file} && pnpm lint:file ${file} --no-warn-ignored) && echo 'Finished ✅' || (echo '' && echo 'Failed ❌'); echo ''",
-      "runningStatusMessage": "Linting ${file}...",
-      "finishStatusMessage": "Linted ${file}"
+      "command": "(pnpm format:file '${fileRelative}' && pnpm lint:file '${fileRelative}' --no-warn-ignored) && echo 'Finished ✅' || (echo '' && echo 'Failed ❌'); echo ''",
+      "runningStatusMessage": "Linting ${fileBasename}...",
+      "finishStatusMessage": "Linted ${fileBasename}"
     }
   ],
   "js/ts.implicitProjectConfig.target": "ESNext"

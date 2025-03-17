@@ -376,6 +376,7 @@ export default [
     files: [viteGlob, '**/*.test.ts', '**/*.test.tsx'],
     rules: {
       'import/no-extraneous-dependencies': 'off',
+      'no-console': 'off',
     },
   },
   {

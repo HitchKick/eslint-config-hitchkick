@@ -27,7 +27,6 @@ export default [
   },
   {
     ignores: [
-      '**/dev-scripts',
       '**/logs',
       '**/*.log',
       '**/npm-debug.log*',
@@ -376,6 +375,12 @@ export default [
     files: [viteGlob, '**/*.test.ts', '**/*.test.tsx'],
     rules: {
       'import/no-extraneous-dependencies': 'off',
+      'no-console': 'off',
+    },
+  },
+  {
+    files: ['backend/dev-scripts'],
+    rules: {
       'no-console': 'off',
     },
   },

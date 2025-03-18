@@ -1,0 +1,59 @@
+// cSpell Settings
+{
+  // Version of the setting file.  Always 0.2
+  "version": "0.2",
+  // language - current active spelling language
+  "language": "en",
+  "numSuggestions": 4,
+  // words - list of words to be always considered correct
+  "words": [
+    "activedescendant",
+    "Chunkname",
+    "gulpfile",
+    "hitchkick",
+    "multilines",
+    "njsproj",
+    "nonblock",
+    "nonconstructor",
+    "nonoctal",
+    "nonwords",
+    "ntvs",
+    "proptype",
+    "proptypes",
+    "setstate",
+    "textnodes",
+    "treegrid"
+  ],
+  // flagWords - list of words to be always considered incorrect
+  // This is useful for offensive words and common spelling errors.
+  // For example "hte" should be "the"
+  "flagWords": ["hte"],
+  "ignoreWords": [],
+  "ignorePaths": [
+    "cspell.json",
+    "**/package-lock.json",
+    "**/node_modules",
+    "vscode-extension",
+    "**/.git/{info,lfs,logs,refs,objects}/**",
+    "**/.git/{index,*refs,*HEAD}",
+    ".vscode",
+    ".vscode-insiders",
+    ".vscode-test",
+    ".vscode-test-insiders",
+    "node_modules",
+    "**/dist",
+    "backend/database-dumps",
+    "backend/prisma/zod",
+    "**/tsconfig.tsbuildinfo",
+    "**/.env",
+    "**/.env.*",
+    "**/pnpm-lock.yaml",
+    "**/package.json",
+    "**/package-lock.json",
+    "**/pnpm-workspace.yaml",
+    "**/*.svg",
+    "backend/src/morgan-session",
+    "backend/prisma/migrations",
+    "backend/dev-scripts/rebuild/dev-dump.sql"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hitchkick",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Eslint config for Hitchkick projects",
   "main": "dist/eslint.config.js",
   "scripts": {
@@ -10,7 +10,12 @@
     "format": "pnpm format:file .",
     "tsc": "tsc -b",
     "precommit": "pnpm format && pnpm tsc && pnpm lint",
-    "build": "rm -rf dist/* && tsc -b"
+    "build": "rm -rf dist/* && tsc -b",
+    "spell": "cspell \"**\" --gitignore",
+    "spell:fix": "cspell \"**\" --gitignore --fix",
+    "test:spell": "pnpm spell --no-progress",
+    "test:prettier": "prettier . --check",
+    "test:lint": "pnpm lint"
   },
   "keywords": [
     "eslint",
@@ -53,7 +58,8 @@
     "jiti": "^2.4.2"
   },
   "devDependencies": {
-    "@types/node": "^22.13.10"
+    "@types/node": "^22.13.10",
+    "cspell": "^8.17.5"
   },
   "packageManager": "pnpm@10.6.4+sha512.da3d715bfd22a9a105e6e8088cfc7826699332ded60c423b14ec613a185f1602206702ff0fe4c438cb15c979081ce4cb02568e364b15174503a63c7a8e2a5f6c"
 }

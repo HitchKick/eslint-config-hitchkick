@@ -379,7 +379,7 @@ export default [
     },
   },
   {
-    files: ['backend/dev-scripts'],
+    files: ['backend/dev-scripts/**/*.{ts,js}'],
     rules: {
       'no-console': 'off',
     },

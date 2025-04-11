@@ -261,7 +261,7 @@ export default [
           selector: 'variable',
           format: ['StrictPascalCase'],
           filter: {
-            regex: '.*(?:Schema|Context)$',
+            regex: '.*(?:Schema|Include|Select|Where|Context)$',
             match: true,
           },
         },

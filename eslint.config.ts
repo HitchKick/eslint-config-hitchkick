@@ -114,34 +114,34 @@ export default [
         'error',
         { multiline: { delimiter: 'semi' } },
       ],
-      '@stylistic/lines-between-class-members': [
-        'error',
-        {
-          enforce: [
-            { blankLine: 'always', prev: 'method', next: '*' },
-            { blankLine: 'never', prev: 'field', next: 'field' },
-            { blankLine: 'always', prev: 'field', next: 'method' },
-          ],
-        },
-      ],
+      // '@stylistic/lines-between-class-members': [
+      //   'error',
+      //   {
+      //     enforce: [
+      //       { blankLine: 'always', prev: 'method', next: '*' },
+      //       { blankLine: 'never', prev: 'field', next: 'field' },
+      //       { blankLine: 'always', prev: 'field', next: 'method' },
+      //     ],
+      //   },
+      // ],
       '@stylistic/padding-line-between-statements': [
         'error',
-        {
-          blankLine: 'always',
-          prev: '*',
-          next: ['return', 'enum', 'interface', 'type'],
-        },
-        { blankLine: 'always', prev: '*', next: 'block-like' },
-        {
-          blankLine: 'always',
-          prev: ['case', 'default', 'const', 'let', 'var'],
-          next: '*',
-        },
-        {
-          blankLine: 'any',
-          prev: ['const', 'let', 'var'],
-          next: ['const', 'let', 'var'],
-        },
+        // {
+        //   blankLine: 'always',
+        //   prev: '*',
+        //   next: ['return', 'enum', 'interface', 'type'],
+        // },
+        // { blankLine: 'always', prev: '*', next: 'block-like' },
+        // {
+        //   blankLine: 'always',
+        //   prev: ['case', 'default', 'const', 'let', 'var'],
+        //   next: '*',
+        // },
+        // {
+        //   blankLine: 'any',
+        //   prev: ['const', 'let', 'var'],
+        //   next: ['const', 'let', 'var'],
+        // },
         {
           blankLine: 'always',
           prev: ['import'],
@@ -167,11 +167,11 @@ export default [
           prev: ['export'],
           next: ['export'],
         },
-        {
-          blankLine: 'always',
-          prev: 'block',
-          next: '*',
-        },
+        // {
+        //   blankLine: 'always',
+        //   prev: 'block',
+        //   next: '*',
+        // },
       ],
       'import/order': [
         'warn',

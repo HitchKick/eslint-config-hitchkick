@@ -114,6 +114,9 @@ export default [
         'error',
         { multiline: { delimiter: 'semi' } },
       ],
+      '@stylistic/lines-between-class-members': [
+        'off',
+      ],
       // '@stylistic/lines-between-class-members': [
       //   'error',
       //   {

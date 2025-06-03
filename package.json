@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hitchkick",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Eslint config for Hitchkick projects",
   "main": "dist/eslint.config.js",
   "scripts": {
